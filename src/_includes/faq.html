@@ -1,0 +1,58 @@
+<!-- FAQ Section -->
+<section class="page-section" id="faq" >
+    <div class="container relative">
+        
+        <h2 class="section-title font-alt align-left mb-70 mb-sm-40">
+            FREQUENTLY ASKED QUESTIONS
+        </h2>
+        <div class="row">
+        {% for item in site.data.faq | limit: 3%}
+            <!-- Team item -->
+            <div class="col-sm-4 mb-xs-30 wow fadeInUp">
+                <div class="team-item">               
+                    <div class="team-item-descr">
+                        
+                        <div class="team-item-name font-alt">
+                            {{item.question}}
+
+                        </div>
+                        <div>
+                          {{item.answer}}
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <!-- End Team item -->
+        {% endfor %} 
+        </div>
+        
+         <div class="row">
+            {% for item in site.data.faq | offset: 3%}
+            <!-- Team item -->
+            <div class="col-sm-4 mb-xs-30 wow fadeInUp">
+                <div class="team-item">
+                    
+                    
+                    
+                    <div class="team-item-descr">
+                        
+                        <div class="team-item-name font-alt">
+                            {{item.question}}
+                        </div>
+                    
+                        
+                        <div>
+                            {{item.answer}}
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <!-- End Team item -->
+            {% endfor %}
+     
+        </div>
+    </div>
+</section>
+<!-- End FAQ Section -->

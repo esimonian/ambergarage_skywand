@@ -1,0 +1,28 @@
+<!-- Interface Section -->
+<section class="page-section  fullwidth-slider" data-background="assets/images/skywand/bg_purple.png" id="moreinterface">
+    {% for item in site.data.interfaceslider %}
+    <!-- Slide Item -->
+    <div>
+        <div class="container relative">
+
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2 align-center">
+                    <!-- Section Icon -->
+                
+                    <!-- Section Title --><h3 class="small-title font-alt">{{item.title}}</h3>
+                    <blockquote class="testimonial white">
+                        <p>
+                            {{item.tagline}}
+                        </p>
+                        <img class="img-responsive" style="max-height: 100px; width: auto; display: block; margin-left: auto; margin-right: auto;" src="assets/images/skywand/{{item.image}}" />
+
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Slide Item -->
+    {% endfor %}
+         
+</section>
+<!-- End Interface Section -->

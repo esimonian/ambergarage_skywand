@@ -1,0 +1,27 @@
+<!-- Workflow Section -->
+<section class="page-section fullwidth-slider" data-background="assets/images/skywand/bg_green.png" id="workflow">
+    <div class="container relative">
+        
+        <h2 class="section-title font-alt mb-70 mb-sm-40">
+            Workflow
+        </h2>
+        <!-- Features Grid -->
+        <div class="row multi-columns-row alt-features-grid">
+            {% for item in site.data.workflow %}
+            <!-- Features Item -->
+            <div class="col-sm-6 col-md-4 col-lg-4">
+                <div class="alt-features-item align-center">
+                    <div class="alt-features-icon">
+                    <img class="img-responsive" style="max-height: 300px; width: auto; display: block; margin-left: auto; margin-right: auto; " src="assets/images/skywand/{{item.image}}" />
+                    </div>
+                    <h3 class="alt-features-title font-alt" style="color:white;">{{item.title}}</h3>
+                    <div class="alt-features-descr align-left" style="color:white;">
+                        {{item.tagline}}
+                    </div>
+                </div>
+            </div>
+            <!-- End Features Item -->
+            {% endfor %}
+    </div>
+</section>
+<!-- End Workflow Section -->

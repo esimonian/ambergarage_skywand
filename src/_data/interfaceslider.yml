@@ -1,0 +1,12 @@
+- image: vive.png
+  title: Supported virtual 3D planning interface
+  tagline:  HTC Vive Virtual Reality Interface
+- image: maya.png
+  title: Supported virtual 3D planning interface
+  tagline: Maya Plugins
+- image: oculus.png
+  title: Supported virtual 3D planning interface
+  tagline: Oculus Rift Virtual Reality Interface
+- image: hololens.png
+  title: Supported virtual 3D planning interface
+  tagline: Microsoft Hololens Augment Reality Interface

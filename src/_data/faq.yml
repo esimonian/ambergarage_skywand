@@ -1,0 +1,19 @@
+- question: How do I acquire a 3D model for the place I am planning to film?
+  answer: |
+    "You can either construct your own model by using photogrammetry, 
+    which includes structured fly scanning and 3D reconstruction software 
+    (like altizure.com). Or you can integrate with 3rd party vendor like Google Maps, 
+    Apple Maps, or <a href="http://plwmodelworks.com">PLW</a> for an pre-constructed model. 
+    Obviously they come with different price tags, and you should make your judgment based on 
+    your requirement."
+- question: Can I tune my trajectory during flights?
+  answer: Yes, our iPad app, augmented reality application and Maya plugin all support modifying your camera path on spot.
+- question: How fast can the drone move when program is controlling it?
+  answer: You can push to the full limit of the drone. e.g., 15m/s for Inspire 1.
+- question: Does wind affect the drone flight trajectory?
+  answer: |
+    Yes, calmer weather will give you a smoother shot. From our experiment, 
+    when wind speed exceeds 15m/s, the shot of small quadcopter like Inspire 1 
+    become unstable. But the production-level multirotors will have more stability.
+- question: Is there a limit on the number of key frames?
+  answer: In current release we do have a limit of 50 key frames. We are planning to raise this limit in future release.

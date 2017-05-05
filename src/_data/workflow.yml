@@ -1,0 +1,11 @@
+- image: step01.png
+  title: PLAN
+  tagline:  Navigate yourself in 3D around the virtual city. Draw your camera path around virtual world by directly pinning key frames in the air with your hands.
+- image: step02.png
+  title: "PREVIEW &amp; ADJUST"
+  tagline: Preview the animated shot of camera movement plan in 3D virtual world. Adjust key frames until you get the desired shot result.
+- image: step03.png
+  title: EXECUTE
+  tagline: Deploy SKYWAND to automatically and precisely follow your camera movement plan to capture epic, extremely smooth, and high precision aerial shots.
+
+

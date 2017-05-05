@@ -1,0 +1,45 @@
+ <!-- Portfolio Section -->
+<section class="page-section pb-0" data-background="assets/images/skywand/bg_lightgreen.png" id="showreel">
+    <div class="relative">
+        
+        <h2 class="section-title font-alt mb-70 mb-sm-40">
+            Show reel
+        </h2>
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    
+                    <div class="section-text align-center mb-70 mb-xs-40" style="color:white;">
+                        Enjoy repeatable, precise, smooth, and epic footage.
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- Works Grid -->
+        <ul class="works-grid work-grid-2 work-grid-gut clearfix font-alt hover-white hide-titles" id="work-grid">
+            {% for item in site.data.portfolio %}
+            <!-- Work Item (Lightbox) -->
+            <li class="work-item mix photography">
+                <a href="{{item.video}}" class="work-lightbox-link mfp-iframe">
+                    <div class="work-img">
+                        <img src="assets/images/skywand/{{item.image}}" alt="Work" />
+                    </div>
+                    <div class="work-intro">
+                        <h3 class="work-title">{{item.title}}</h3>
+                        <div class="work-descr">
+                            {{item.tagline}}
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <!-- End Work Item -->
+            {% endfor %}
+            
+        </ul>
+        <!-- End Works Grid -->
+    </div>
+</section>
+<!-- End Portfolio Section -->
+            

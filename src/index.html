@@ -2,248 +2,113 @@
 layout: default
 ---
 
-<!-- Fullwidth Slider -->
-<div class="home-section fullwidth-slider bg-dark" id="home">
-           {% for project in site.data.projects %}         
-    <!-- Slide Item -->
-    <section class="home-section bg-scroll bg-dark-alfa-30 bg-pattern-over" data-background="assets/images/video/{{project.name}}.jpg" id="{{project.name}}">
-        <div class="js-height-full container  ">
-            
-            <div class="bg-video-wrapper" id="video-background-{{project.title}}">
-                <div class="bg-video-overlay bg-pattern-over"></div>
-            </div>
-
-            <!-- Hero Content -->
-            <div class="home-content">
-                <div class="home-text">
-                    <div class="hs-line-4 no-transp font-alt mb-50 mb-xs-30">
-                        {{project.uppertagline}}
-                    </div>  
-                    
-                    <h1 class="hs-line-14 font-alt mb-50 mb-xs-30">
-                        {{project.title}}
-                    </h1>
-
-                    <h2 class="hs-line-4 no-transp font-alt mb-50 mb-xs-30">
-                        {{project.tagline}}
-                    </h2>                       
-                    {% if project.videourl%}
-                    <div>
-                    <a href="{{project.videourl}}" class="big-icon-link lightbox mfp-iframe"><span class="big-icon"><i class="fa fa-play"></i></span></a>
-                    </div>
-                    {% endif %}
-
-                    <h1>
-                    </h1>
-                    
-                    <div>
-                   
-                    {% for button in project.buttons %}  
-                        <a href="{{button.url}}" target="_blank" class="btn btn-mod btn-w btn-medium btn-round">{{button.text}}</a>
-                        <span class="hidden-xs">&nbsp;</span>
-                    {% endfor %}
-                    </div>
-                     
-                </div>
-            </div>
-            <!-- End Hero Content -->
-            
-        </div>
-    </section>
-    <!-- End Slide Item -->
-    {% endfor %}
-
-     <!-- Slide Item -->
-     <!--
-    <section class="home-section bg-scroll bg-dark-alfa-30 bg-pattern-over" data-background="assets/images/video/cityvr.jpg" id="cityvr">
-        <div class="js-height-full container">
-
-            <div class="bg-video-wrapper" id="video-background-cityvr">
-                <div class="bg-video-overlay bg-pattern-over"></div>
-            </div>
-
-            <!-- Hero Content 
-            <div class="home-content">
-                <div class="home-text" >
-                    <div class="hs-line-4 no-transp font-alt mb-50 mb-xs-30">
-                        Redefine the way we experience 3D maps
-                    </div>                       
-
-                    <h1 class="hs-line-14  font-alt mb-50 mb-xs-30 cityvr-title">
-                        The
-                        City VR
-                        Experience
-                    </h1>
-
-                    <h2 class="hs-line-4 no-transp  font-alt mb-50 mb-xs-30">
-                        Walk like a giant alongside skyscrapers<br> 
-                    </h2>                       
-                    
-                    <div>
-                    <a href="https://vimeo.com/184466672" class="big-icon-link lightbox mfp-iframe"><span class="big-icon"><i class="fa fa-play"></i></span></a>
-                    </div> 
-
-                    <h1>
-                    </h1>
-                    <div>
-                        <a href="https://store.steampowered.com/app/517990/" target="_blank" class="btn btn-mod btn-w btn-medium btn-round hidden-xs">Available on Steam <i class="fa fa-steam fa-lg dark"></i></a>
-                        <span class="hidden-xs">&nbsp;</span>
-                        <a href="https://cityvr.com" target="_blank" class="btn btn-mod btn-w btn-medium btn-round">Visit cityvr.com</a>
-                    </div>
-                    
-                </div>
-            </div>-->
-            <!-- End Hero Content -->
-
-        </div>
-   <!-- </section>
-  End Slide Item -->
-
-    <!-- Slide Item -->
- <!--   <section class="home-section bg-scroll bg-dark-alfa-30 bg-pattern-over" data-background="assets/images/video/airgraphy.jpg" id="airgraphy">
-        <div class="js-height-full container">
-
-            <div class="bg-video-wrapper" id="video-background-airgraphy">
-                <div class="bg-video-overlay bg-pattern-over "></div>
-            </div>
-
-            <!-- Hero Content 
-            <div class="home-content">
-                <div class="home-text">
-                    
-                    <h1 class="mb-50 mb-xs-30 airgraphy-title">
-                        airgraphy
-                    </h1>
-
-                    <h2 class="hs-line-4 no-transp font-alt mb-50 mb-xs-30">
-                        Augmented Reality Light Painting 
-                        <br>
-                         powered by Skywand
-
-                    </h2>
-
-                    <!-- 
-                    <div>
-                    <a href="" class="big-icon-link lightbox mfp-iframe"><span class="big-icon"><i class="fa fa-play"></i></span></a>
-                    </div> -->
-<!--
-                    <h1>
-                    </h1>
-                    <div>
-                        <a href="#" class="btn btn-mod btn-w btn-medium btn-round">Coming soon to DJI Drones</a>
-                        <span class="hidden-xs">&nbsp;</span>
-                    </div>
-                    
-                </div>
-            </div>
--->
-            <!-- End Hero Content -->
-            
-        </div>
-  <!--  </section>-->
-    <!-- End Slide Item --> 
-
-</div>
-<!-- End Fullwidth Slider -->
-   
-
-                     
-<!-- Divider -->
-<hr class="mt-0 mb-0 "/>
-<!-- End Divider -->
-
-<!-- About Section -->
-<section class="page-section" id="about" >
-    <div class="container relative">
-
-        <h2 class="section-title font-alt mb-70 mb-sm-40">
-            About the studio - Amber Garage
-        </h2>
+<section class="home-section" data-background="assets/images/skywand/bg_orange.png" id="home">
+    <div class="js-height-full container">
         
-        <div class="section-text col-md-8 col-md-offset-2 mb-50 mb-sm-20">
-            <div class="row">
-                <div>
-                {% capture about_md %}{% include about-section.md %}{% endcapture %}
-                {{ about_md | markdownify }}
-                    
-
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- End About Section -->
-
-
-<!-- Contact Section -->
-<section class="page-section bg-gray" id="contact" >
-    <div class="container relative">
-              
-        <h2 class="section-title font-alt mb-70 mb-sm-40">
-            Partnerships &amp; Contacts
-        </h2>
-
-
-         <div class="section-text col-md-8 col-md-offset-2 ">
-            <div class="row mb-50 mb-sm-20">
-                <div>
-                We are looking for partnership with innovators, filmmakers, artists, and creatives to collaborate on creative projects that use the Skywand technologies. 
-                </div>
-
-            </div>
-
-            <div class="row wow fadeInUp" data-wow-duration="1.5s">
+        <!-- Footage Content -->
+        <div class="home-content">
+            <div class="home-text">
                 
-                     <!-- Email -->
-                    <div class="col-sm-4 pt-20 pb-20 pb-xs-0">
-                        <div class="contact-item">
-                            <div class="ci-icon">
-                                <i class="fa fa-envelope"></i>
-                            </div>
-                            <div class="ci-title font-alt">
-                                Email
-                            </div>
-                            <div class="ci-text">
-                                <a href="mailto:info@ambergarage.com">info@ambergarage.com</a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Email -->
+                <h1 class="hs-line-14 font-alt mb-50 mb-xs-20" style="color:white;">
+                    SKYWAND
+                </h1>
+                
+                <h2 class="hs-line-8 no-transp font-alt" style="color:white;">
+                    immersive motion control for aerial cinematography
+                </h2>
+                
+                <h2>
+                </h2>
+
+                <div>
+                    <a href="http://vimeo.com/163223379" class="big-icon-link lightbox mfp-iframe"><span class="big-icon"><i class="fa fa-play"></i></span></a>
+                </div>  
+
+            </div>
+        </div>
+        <!-- End Footage Content -->
+        
+    </div>
+</section>
+<!-- End Home Section -->
+            
+            
+<!-- Navigation panel -->
+<nav class="main-nav dark transparent stick-fixed">
+    <div class="full-wrapper relative clearfix">
+        <!-- Logo ( * your text or image into link tag *) -->
+        <div class="nav-logo-wrap local-scroll">
+            <a href="#top" class="logo" style="padding-left:10px;">
+                <img src="assets/images/skywand/logo-white.png" alt="" />
+            </a>
+        </div>
+        <div class="mobile-nav">
+            <i class="fa fa-bars"></i>
+        </div>
+        <!-- Main Menu -->
+        <div class="inner-nav desktop-nav">
+            <ul class="clearlist scroll-nav local-scroll">
+                <li class="active"><a href="#home">Home</a></li>
+                <li><a href="#workflow">Workflow</a></li>
+                <li><a href="#showreel">Show Reel</a></li>
+                <li><a href="#virtualreality">Virtual Reality</a></li>
+                <li><a href="#moreinterface">Software</a></li>
+                <li><a href="#aerialplatform">Aerial</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contacts</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- End Navigation panel -->
+            
+            
+{% include workflow.html%}
+            
+{% include portfolio.html%}
+
+<!-- Interface Section -->
+<section class="page-section fullwidth-slider" data-background="assets/images/skywand/bg_blue.png" id="virtualreality">
+    <div class="relative">
+        
+        <h2 class="section-title font-alt mb-70 mb-sm-40">
+            virtual reality interface
+        </h2>
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
                     
-                    <!-- Email -->
-                    <div class="col-sm-4 pt-20 pb-20 pb-xs-0">
-                        <div class="contact-item">
-                            <div class="ci-icon">
-                                <i class="fa fa-envelope"></i>
-                            </div>
-                            <div class="ci-title font-alt">
-                                For Skywand
-                            </div>
-                            <div class="ci-text">
-                                <a href="mailto:info@skywand.com">info@skywand.com</a>
-                            </div>
-                        </div>
+                    <div class="section-text align-center mb-70 mb-xs-40" style="color:white;">
+                        Walk in the virtual city like a giant.
+                        <br>
+                        Frame the shot intuitively as you hold a real camera in the sky.
                     </div>
-                    <!-- End Email -->
-                    
-                    <!-- Email -->
-                    <div class="col-sm-4 pt-20 pb-20 pb-xs-0">
-                        <div class="contact-item">
-                            <div class="ci-icon">
-                                <i class="fa fa-envelope"></i>
-                            </div>
-                            <div class="ci-title font-alt">
-                                For City VR
-                            </div>
-                            <div class="ci-text">
-                                <a href="mailto:info@cityvr.com">info@cityvr.com</a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Email -->
+                    <div class="section-text align-center mb-70 mb-xs-40">
+                    <a href="http://vimeo.com/163277992" class="big-icon-link lightbox mfp-iframe"><span class="big-icon"><i class="fa fa-play"></i></span></a>
+                    </div>  
+                
+
                 </div>
+            </div>
         </div>
         
     </div>
 </section>
-<!-- End Contact Section -->
+<!-- End Interface Section -->
+            
+{% include interfaceslider.html%}           
+     
+{% include platform.html%}             
+        
+{% include faq.html%}            
+
+{% include about.html%}   
+
+{% include newsletter.html%}   
+
+{% include contact.html%}                         
+                    
+            
+            
