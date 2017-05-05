@@ -1,4 +1,4 @@
-// generated on 2017-05-03 using generator-jekyllized 1.0.0-rc.7
+// generated on 2017-05-05 using generator-jekyllized 1.0.0-rc.7
 'use strict';
 
 const gulp = require('gulp');

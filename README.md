@@ -1,29 +1,41 @@
-# Amber Garage Website
+# Skywand
 
-To add new projects edit the projects.yml file in src/_data
+> Main Site
 
 ## To get started
 
-You can edit the text in the _includes/about-section.md file. To preview the changes run:
 ```sh
-$ gulp 
+$ gulp [--prod]
 ```
 
-## To deploy 
-
-Run:
+## Usage
 
 ```sh
-$ gulp build --prod
+$ gulp build [--prod]
 ```
-to build the site and then run
 
 ```sh
 $ gulp deploy
 ```
 
-to push the site to github pages
+#### Settings
+In your `_config.yml` and `humans.txt` you should add your Github and Twitter
+profile if you want to.
+
+## Install
+If you have cloned this repo or want to reinstall, make sure there&#39;s no
+`node_modules` or `Gemfile.lock` folder/file and then run `npm install` and
+`bundle install`.
+
+#### Update
+To update: `npm update generator-jekyllized -g`, then run `yo jekyllized:gulp
+[--rsync|amazon|pages]` in this directory. Note that this will overwrite any
+local changes, so back it up.
+
+## Github
+For more information on how to use your new project, please refer to the [README
+on Github](https://github.com/sondr3/generator-jekyllized).
 
 ## Owner
 
-> [Amber Garage](https://esimonian.github.io/ambergarage_website)
+> [Amber Garage](https://esimonian.github.io/ambergarage_skywand)

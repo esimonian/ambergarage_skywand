@@ -22,66 +22,6 @@
   <!-- inject:js -->
   <!-- endinject -->
 
-   <script>
-    // Video Init
-
-  $(document).ready(function(){
-
-{% for project in site.data.projects %}   
-  $("#{{project.name}}_menu_btn").click(function (e) {
-      var owl = $("#home").data("owlCarousel");
-      owl.goTo(0);
-  });
-
-  {% endfor %}
-  /*
-  $("#cityvr_menu_btn").click(function (e) {
-      var owl = $("#home").data("owlCarousel");
-      owl.goTo(1);
-  });
-  $("#airgraphy_menu_btn").click(function (e) {
-      var owl = $("#home").data("owlCarousel");
-      owl.goTo(2);
-  });
-*/
-if (!($("html").hasClass("mobile"))){
-  {% for project in site.data.projects %} 
-    var videobackground_{{project.name}} = new $.backgroundVideo($('#video-background-{{project.name}}'), {
-        "align": "centerXY",
-        "width": 1920,
-        "height": 1080,
-        "path": "assets/images/video/",
-        "filename": "{{project.name}}",
-        "types": ["webm", "mp4"],
-        "autoplay": true,
-        "loop": true
-    });
-  {% endfor %}
-  /*
-    var videobackground_cityvr = new $.backgroundVideo($('#video-background-cityvr'), {
-        "align": "centerXY",
-        "width": 1920,
-        "height": 1080,
-        "path": "assets/images/video/",
-        "filename": "cityvr",
-        "types": ["webm", "mp4"],
-        "autoplay": true,
-        "loop": true
-    });
-    var videobackground_skywand = new $.backgroundVideo($('#video-background-skywand'), {
-        "align": "centerXY",
-        "width": 1920,
-        "height": 1080,
-        "path": "assets/images/video/",
-        "filename": "skywand",
-        "types": ["webm", "mp4"],
-        "autoplay": true,
-        "loop": true
-    });
-    */
-}
-});
-</script>
 
   </body>
 
