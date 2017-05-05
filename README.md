@@ -1,5 +1,7 @@
 # Skywand
 
+To make updates edit the text in the src/_data files. They correspond to the html in the src/_includes
+
 > Main Site
 
 ## To get started
